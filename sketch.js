@@ -45,11 +45,11 @@ function branch(len, s_val) {
         
         push();
         rotate(angle);
-        branch(len*0.7, s_val*0.8);
+        branch(len*0.65, s_val*0.8);
         pop();
         push();
         rotate(-angle);
-        branch(len*0.7, s_val*0.8);
+        branch(len*0.65, s_val*0.8);
         pop();
     }
 }
