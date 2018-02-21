@@ -1,7 +1,7 @@
 # Fractal Trees
 Using P5JS
 
-###Generation and drawing of a fractal tree.
+### Generation and drawing of a fractal tree.
 
 Step1: Draw the trunk.
 
