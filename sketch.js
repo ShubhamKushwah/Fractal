@@ -5,7 +5,7 @@ var stroke_val = 8;
 
 function setup() {
 	createCanvas(1200, 840);
-    slider = createSlider(0, TWO_PI, PI/4, 0.01);
+    // slider = createSlider(0, TWO_PI, PI/4, 0.01);
 }
 
 var colour = 255;
