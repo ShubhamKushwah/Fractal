@@ -24,16 +24,16 @@ function draw() {
     strokeWeight(stroke_val);
     translate(600, height_ - inc); //shifting the origin to bottom-mid
     branch(250 - inc, stroke_val);
-    // if(inc < 250 && above) {
-    //     inc += 1;
-    // }
-    // else if(inc >= 250 || !above) {
-    //     inc -= 1;
-    //     above = false;
-    //     if(inc == 0) {
-    //         above = true;
-    //     }
-    // }
+    if(inc < 250 && above) {
+        inc += 1;
+    }
+    else if(inc >= 250 || !above) {
+        inc -= 1;
+        above = false;
+        if(inc == 0) {
+            above = true;
+        }
+    }
 }
 
 function branch(len, s_val) {
