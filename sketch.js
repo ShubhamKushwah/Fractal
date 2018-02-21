@@ -13,9 +13,9 @@ var inc = 0;
 var above = true;
 
 function draw() {
-    angle = slider.value();
+    // angle = slider.value();
     var height_ = height;
-    // angle += 0.05;
+    angle += 0.05;
     col1 = (colour-angle*30)%255;
     col2 = (colour+angle*30)%255;
     col3 = (colour-angle*15)%255;
