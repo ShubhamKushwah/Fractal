@@ -11,14 +11,20 @@ function setup() {
 var colour = 255;
 var inc = 0;
 var above = true;
+var num = 255;
 
 function draw() {
     // angle = slider.value();
     var height_ = height;
     angle += 0.05;
-    col1 = (colour-angle*30)%255;
-    col2 = (colour+angle*30)%255;
-    col3 = (colour-angle*15)%255;
+
+	num1 = (num + random(150))%255;
+	num2 = (num + random(150))%255;
+	num3 = (num + random(150))%255;
+	
+    col1 = num1;
+    col2 = num2;
+    col3 = num3;
     stroke(col1, col2, col3);
 	background(51);
     strokeWeight(stroke_val);
@@ -34,6 +40,8 @@ function draw() {
             above = true;
         }
     }
+
+    num = (num - 1)%255;
 }
 
 function branch(len, s_val) {
